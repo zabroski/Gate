@@ -1,0 +1,49 @@
+.contact-contenaire {
+margin: 50px auto;
+max-width: 600px;
+padding: 20px;
+background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+border-radius: 15px;
+box-shadow: 0 8px 32px rgb(0, 0, 0.1);
+animation: fadeIn 1s ease-in-out;
+}
+
+
+.contatct-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rrgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
