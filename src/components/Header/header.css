@@ -1,10 +1,10 @@
- 
+/*  
 .nav-bar{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background: #242424; */
+
 }
 
 
@@ -65,7 +65,7 @@ ul li {
   color: #fff;
   font-size: 18px;
   max-width: 200px;
-  box-shadow: none; /* Removes any shadow effects */
+  box-shadow: none; 
 }
 
 
@@ -74,4 +74,109 @@ ul li {
   border: none;
   outline: none;
   box-shadow: none;
+} */
+
+/* 
+
+.header {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+
+/* src/components/Header/Header.module.css */
+.header {
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.brandName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #facc15;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #facc15;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .brandName {
+    font-size: 1.1rem;
+  }
+  
+}
+

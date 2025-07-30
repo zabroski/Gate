@@ -1,6 +1,6 @@
 
 import React, {useState} from "react";
-// import './Contact.css';
+import './contact.css';
 
 
 const Contact  = () => {
@@ -25,7 +25,7 @@ const handleSubmit = (e) => {
 return (
     <div className="contact-container">
         <h2 className='contact-title'>Get in Touch</h2>
-        <form onSubmit={handleSubmit} className='contact-form'>
+        <form onSubmit={handleSubmit}                       className='contact-form'>
             <div className='form-group'>
                 <label htmlFor='name'>Name:</label>
                 <input 
