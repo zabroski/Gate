@@ -70,7 +70,7 @@ const Header = () => {
       <div className="container">
         <div className="logoWrapper">
            <img src={Jump} alt='logo' className="logo" />
-          <span className="brandName">MyApp</span>
+          <span className="brandName">Summer Sheridan-Zabre</span>
         </div>
         <nav className="nav">
           <NavLink

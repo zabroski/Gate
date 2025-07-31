@@ -22,6 +22,10 @@ const handleSubmit = (e) => {
     setFormData({ name: '', email: '', message: '' }); // Reset form after 
 };
 
+const handlCancel = () => { 
+    setFormData({ name: '', email: '', message: '' });
+}
+
 return (
     <div className="contact-container">
         <h2 className='contact-title'>Get in Touch</h2>
@@ -33,7 +37,8 @@ return (
                     id='name' 
                     name='name' 
                     value={formData.name} 
-                    onChange={handleChange} 
+                    onChange={handleChange}
+                    placeholder="Your name"
                     required
                 />
             </div>
@@ -62,9 +67,14 @@ return (
                     required
                 ></textarea>
             </div>
-            <button type='submit' className="submit-button">
+            <div className="button-goupe">
+             <button type='submit' className="submit-button">
                 Submit
-            </button> 
+             </button>
+             <button type='button' className="cancel-button" onClick={handlCancel}>
+                cancel
+            </button>
+            </div>
         </form>
     </div>
 );
