@@ -1,91 +1,4 @@
-/*  
-.nav-bar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-}
-
-
-.logo {
-  width: 160px;
-  cursor: pointer;
-  font-size: 50px;
-  color:rgb(15, 15, 15);
-}
-
-.dark-moon {
-  width: 100px;
-  font-size: 30px;
-  color: black;
-}
-
-
-ul {
-  flex: 1;
-  list-style: none;
-  text-align: center;
-}
-
-ul li {
-  display: inline-block;
-  margin: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-
-.search-box {
-  display: flex;
-  align-items: center;
-  background: #242424;
-  padding: 10px 20px;
-  border-radius: 50px;
-  margin-right: 10px;
-}
-
-.search-box imput  {
-  padding: 16px;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 18px;
-  max-width: 200px;
-}
-
-
-
-.search-box input {
-  padding: 13px;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 18px;
-  max-width: 200px;
-  box-shadow: none; 
-}
-
-
-
-.search-box input:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-} */
-
-/* 
-
-.header {
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-
-
-/* src/components/Header/Header.module.css */
 .header {
   background: linear-gradient(90deg, #1e3a8a, #3b82f6);
   color: white;
@@ -138,7 +51,8 @@ ul li {
 .navLink {
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
+  /* font-size: 0px; */
   font-weight: 500;
   position: relative;
   transition: color 0.3s ease;
@@ -175,6 +89,12 @@ ul li {
   }
 
   .brandName {
+    font-size: 1.1rem;
+    display: none;
+      
+
+  }
+  .navLink {
     font-size: 1.1rem;
   }
   
